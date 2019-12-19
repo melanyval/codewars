@@ -18,3 +18,12 @@ reverseString(word);
 
 let delicious = "cuban sandwiches"
 
+
+let truth = "you look like the nerd emoji 🤓"
+
+function reverseSentence(str){
+  return str.split(" ").reverse().join(" ");
+}
+
+reverseSentence(truth);
+

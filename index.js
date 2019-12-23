@@ -60,3 +60,22 @@ function randomFood(num, menu) {
 }
 
 randomFood(5, tasty)
+
+
+// Question 4: Create a function that takes a sentence as an argument, and returns the same sentence with the first letter of each word capitalized
+
+// Example: "hello world" would become "Hello World"
+
+let title = 'mindful mel' // <3
+
+function titleCase(str) {
+  var splitStr = str.toLowerCase().split(' ');
+   for (var i = 0; i < splitStr.length; i++) {
+       
+       splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);     
+   }
+  
+   return splitStr.join(' '); 
+}
+
+titleCase(title)

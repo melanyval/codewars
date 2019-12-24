@@ -79,3 +79,28 @@ function titleCase(str) {
 }
 
 titleCase(title)
+
+// Question 5
+
+// Given an array of numbers and strings, return a new array that contains only the numbers, sorted in ascending order. 
+
+let mixed = [23, -2, 'pie', 69, 420, 'alligator', 'empanadas']
+
+function ascending(arr) {
+
+  // code goes here Mel :)
+  
+}
+
+ascending(mixed)
+
+// how to filter: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+
+// finding the type of each element: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof
+
+// Examples:
+
+console.log(typeof 2) // will print 'number'
+console.log(typeof 'pie') // will print 'string'
+
+// how to sort: https://www.w3schools.com/js/js_array_sort.asp

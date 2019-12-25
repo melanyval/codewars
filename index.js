@@ -59,7 +59,7 @@ function randomFood(num, menu) {
   return finalArr
 }
 
-randomFood(5, tasty)//
+randomFood(5, tasty)// cha
 
 
 // Question 4: Create a function that takes a sentence as an argument, and returns the same sentence with the first letter of each word capitalized

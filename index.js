@@ -88,7 +88,7 @@ let mixed = [23, -2, 'pie', 69, 420, 'alligator', 'empanadas']
 
 function ascending(arr) {
 
-  // code goes here Mel :)
+  // code goes here Mel
   
 }
 

@@ -104,3 +104,4 @@ console.log(typeof 2) // will print 'number'
 console.log(typeof 'pie') // will print 'string'
 
 // how to sort: https://www.w3schools.com/js/js_array_sort.asp
+//

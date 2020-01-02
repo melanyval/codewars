@@ -63,6 +63,7 @@ function randomFood(num, menu) {
 
 randomFood(5, tasty)
 
+//////////////////////////////////////////////////////////////////////////////
 
 // Question 4: Create a function that takes a sentence as an argument, and returns the same sentence with the first letter of each word capitalized
 
@@ -82,9 +83,7 @@ function titleCase(str) {
 
 titleCase(title)
 
-// Question 5
-
-// Given an array of numbers and strings, return a new array that contains only the numbers, sorted in ascending order. 
+///////////////////////////////////////////////////////////////////////////////
 
 // Question 5
 

@@ -107,3 +107,4 @@ newMixed.sort(function(a, b){return a-b});
 ascending(mixed)
 
 //
+// Question 6

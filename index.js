@@ -27,7 +27,7 @@ function reverseSentence(str){
 
 reverseSentence(truth);
 
-
+//
 // Question 3://
 
 // Given a menu of delicious food, write a function that takes 2 arguments:

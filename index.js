@@ -135,8 +135,8 @@ sumDigits(-32);
 
 //////////////////////////////////////////////////////////////////////////////
 
-// question 7
-/// Task:
+// Question 7
+// Task:
 // Given a list of numbers, determine whether the sum of its elements is odd or even.
 
 // Give your answer as a string matching "odd" or "even".

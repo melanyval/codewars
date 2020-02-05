@@ -133,6 +133,8 @@ sumDigits(10);
 sumDigits(99);
 sumDigits(-32);
 
+//////////////////////////////////////////////////////////////////////////////
+
 // question 7
 /// Task:
 // Given a list of numbers, determine whether the sum of its elements is odd or even.

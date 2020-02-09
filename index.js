@@ -1,7 +1,6 @@
-///// Problem 1:
-//
-// Reverse this string so it says Tacos backwards: "socaT" //
+// Problem 1:
 
+// Reverse this string so it says Tacos backwards: "socaT"
 let word = "Tacos"
 
 function reverseString(str){
@@ -131,18 +130,34 @@ sumDigits(10);
 sumDigits(99);
 sumDigits(-32);
 
+// question 7
+/// Task:
+// Given a list of numbers, determine whether the sum of its elements is odd or even.
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-////
+// Give your answer as a string matching "odd" or "even".
+
+// If the input array is empty consider it as: [0] (array with a zero).
+
+// Example:
+// odd_or_even([0])          ==  "even"
+// odd_or_even([0, 1, 4])    ==  "odd"
+// odd_or_even([0, -1, -5])  ==  "even"
+
+function oddOrEven(array) {
+
+  if (array.length == 0){
+    return ("even")
+  } 
+  
+  let total = array.reduce((a,b) => {
+    return a + b;
+  })
+  console.log(total)
+  
+  if (total % 2 == 0){
+    return("even")
+    }
+  else {
+    return("odd")
+    }
+  }

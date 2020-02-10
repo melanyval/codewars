@@ -161,3 +161,5 @@ function oddOrEven(array) {
     return("odd")
     }
   }
+
+  // question 8

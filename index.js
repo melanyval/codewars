@@ -3,7 +3,7 @@
 // Reverse this string so it says Tacos backwards: "socaT"
 let word = "Tacos"
 
-function reverseString(str){
+function reverseString(str) {
   return str.split("").reverse().join("");
 }
 
@@ -20,7 +20,7 @@ let delicious = "cuban sandwiches"
 
 let truth = "you look like the nerd emoji 🤓"
 
-function reverseSentence(str){
+function reverseSentence(str) {
   return str.split(" ").reverse().join(" ");
 }
 
@@ -40,20 +40,20 @@ reverseSentence(truth);
 let tasty = [
   'burger',
   'pizza',
-  'overpriced salad', 
-  'not cucumbers', 
+  'overpriced salad',
+  'not cucumbers',
   'candy that is 99% sugar',
-  'tequenos', 
-  'the top part of a muffin', 
-  'any kind of meat on any kind of rice', 
+  'tequenos',
+  'the top part of a muffin',
+  'any kind of meat on any kind of rice',
   'all cuban food tbh'
 ]
 
 function randomFood(num, menu) {
   let finalArr = []
-  for (let i = 0; i <= num; i++){
-  let randomFood = menu[Math.floor(Math.random()*menu.length)]
-  finalArr.push(randomFood);
+  for (let i = 0; i <= num; i++) {
+    let randomFood = menu[Math.floor(Math.random() * menu.length)]
+    finalArr.push(randomFood);
   }
   return finalArr
 }
@@ -65,16 +65,16 @@ randomFood(5, tasty)
 
 // Example: "hello world" would become "Hello World"
 
-let title = 'mindful mel' 
+let title = 'mindful mel'
 
 function titleCase(str) {
   var splitStr = str.toLowerCase().split(' ');
-   for (var i = 0; i < splitStr.length; i++) {
-       
-       splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);     
-   }
-  
-   return splitStr.join(' '); 
+  for (var i = 0; i < splitStr.length; i++) {
+
+    splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
+  }
+
+  return splitStr.join(' ');
 }
 
 titleCase(title)
@@ -96,11 +96,11 @@ function ascending(arr) {
   )
 
 
-newMixed.sort(function(a, b){return a-b});
+  newMixed.sort(function (a, b) { return a - b });
 
-  
+
   console.log(newMixed);
-  
+
 }
 
 ascending(mixed)
@@ -120,10 +120,10 @@ function sumDigits(number) {
   var sum = 0
   var string = Math.abs(number).toString();
 
-  for (i=0; i <string.length; i++){
-    sum = sum + parseInt(string.substring(i, i+1));
+  for (i = 0; i < string.length; i++) {
+    sum = sum + parseInt(string.substring(i, i + 1));
   }
-return sum;
+  return sum;
 }
 
 sumDigits(10);
@@ -145,25 +145,25 @@ sumDigits(-32);
 
 function oddOrEven(array) {
 
-  if (array.length == 0){
+  if (array.length == 0) {
     return ("even")
-  } 
-  
-  let total = array.reduce((a,b) => {
+  }
+
+  let total = array.reduce((a, b) => {
     return a + b;
   })
   console.log(total)
-  
-  if (total % 2 == 0){
-    return("even")
-    }
-  else {
-    return("odd")
-    }
-  }
 
-  // question 8
-  // https://www.codewars.com/kata/539a0e4d85e3425cb0000a88/train/javascript
+  if (total % 2 == 0) {
+    return ("even")
+  }
+  else {
+    return ("odd")
+  }
+}
+
+// question 8
+// https://www.codewars.com/kata/539a0e4d85e3425cb0000a88/train/javascript
 
 // function sum(){
 // 	var sum = 0;
@@ -180,15 +180,15 @@ function oddOrEven(array) {
 // add(1)(2);
 // // returns 3
 
-function add(n){
-  var fn = function(x) {
+function add(n) {
+  var fn = function (x) {
     return add(n + x);
   };
-  
-  fn.valueOf = function() {
+
+  fn.valueOf = function () {
     return n;
   };
-  
+
   return fn;
 }
 
@@ -201,9 +201,9 @@ add(1);
 // Create a function that takes a string and returns the string ciphered with Rot13. If there are numbers or special characters included in the string, they should be returned as they are. Only letters from the latin/english alphabet should be shifted, like in the original Rot13 "implementation".
 
 function rot13(str) {
-  var input     = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-  var output    = 'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm';
-  var index     = x => input.indexOf(x);
+  var input = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+  var output = 'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm';
+  var index = x => input.indexOf(x);
   var translate = x => index(x) > -1 ? output[index(x)] : x;
   return str.split('').map(translate).join('');
 }
@@ -213,4 +213,28 @@ function rot13(str) {
 // Question 10
 
 //
+// https://hackmd.io/@nkU2rmFFRf29v1MdrgTbpw/r1NkU7org?type=view
+
+// blahblah blah asjdlakjdla :D
+
+// console.log(1 % 3 == 0)
+// console.log(2 % 3 == 0)
+// console.log(3 % 3 == 0)
+
+for (let i = 1; i <= 75; i++){
+  if (i % 3 == 0 && i % 5 == 0){
+  console.log("FizzBuzz")
+  }
+  else if (i % 3 == 0){
+    console.log("Fizz")
+  }
+  else if (i % 5 == 0){
+    console.log("Buzz")
+  }
+  else {
+    console.log(i)
+  }
+
+}
+
 //
